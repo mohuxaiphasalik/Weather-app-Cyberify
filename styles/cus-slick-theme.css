@@ -1,0 +1,90 @@
+/* Arrows */
+.cus-slick-prev,
+.cus-slick-next {
+  font-size: 0;
+  line-height: 0;
+
+  position: absolute;
+  top: 50%;
+
+  display: block;
+
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+
+  cursor: pointer;
+
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.cus-slick-prev:hover,
+.cus-slick-prev:focus,
+.cus-slick-next:hover,
+.cus-slick-next:focus {
+  /* color: transparent; */
+  outline: none;
+  /* background: transparent; */
+}
+.cus-slick-prev:hover:before,
+.cus-slick-prev:focus:before,
+.cus-slick-next:hover:before,
+.cus-slick-next:focus:before {
+  opacity: 1;
+}
+.cus-slick-prev.cus-slick-disabled:before,
+.cus-slick-next.cus-slick-disabled:before {
+  opacity: 0.25;
+}
+
+.cus-slick-prev:before,
+.cus-slick-next:before {
+  font-family: "slick";
+  font-size: 24px;
+  line-height: 1;
+
+  opacity: 0.75;
+  /* color: black; */
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.cus-slick-prev {
+  left: -25px;
+  top: 70px;
+}
+[dir="rtl"] .cus-slick-prev {
+  right: -25px;
+  left: auto;
+}
+.cus-slick-prev:before {
+  content: "←";
+}
+[dir="rtl"] .cus-slick-prev:before {
+  content: "→";
+}
+
+.cus-slick-next {
+  right: -25px;
+  top: 70px;
+}
+[dir="rtl"] .cus-slick-next {
+  right: auto;
+  left: -25px;
+}
+.cus-slick-next:before {
+  content: "→";
+}
+[dir="rtl"] .cus-slick-next:before {
+  content: "←";
+}
+
+.cus-slick-color {
+  color: black;
+}
